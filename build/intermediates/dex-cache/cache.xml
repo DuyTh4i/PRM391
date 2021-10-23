@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_163f48e8e19eaa467a18964929c7d54e65e37038/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/9d6c2d9b1d203ed91fbe4c504b34a645323b9c0f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_913916c60824812bfbc9e0049466ee05c870cf61/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/fc745aeb605fa6e0d761aded38a78c0d4d01b93f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_79d37e472d704a3e73b4674c2e72067403f0c29e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e84f6f077410b0b3c137a89a9c3d1b6480e6a8a3">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0f9894dba08ee18e42f8fbe48df63a3e6ac72b12/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/2ea2d093924a899fbfa89e80e3fb3f695f3befb8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_80c32d182fde0f88ff99eecce9b600f21d6f1355/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/94a70b61c0431b539bd02e9a95e092a84422bb46/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_29edcfa91f0f83541929f1b1833d56aec2ca64d1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/ca402415b791c5746d54c4848362f06a09653205/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_45a4f17ff21ba5cd1dfa1303cae93926ba4e5fcc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/8b54cf260db6a12776ecb861cf4ace9d83e757c5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e6dc2f4bcded0b2876e61feaa81d9dcd0f6aab7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/b1153a1a9d5fd9959973bb0d47234c4afdcf5dc2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6409e2e82b8846177f1d2681e748e69ad87f9bdd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/dbfc9f4a720128bffa06267cb6c7e4f092081fca/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d07b1d2c9f012482b10ecd0da1a778e6b35a2728/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/4636d06deb6ea53e1d0529dd6e7c20982f975feb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8b758bc78d293b73548779b5cad83f2d9473ae8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/15be78b6860b0cacba40ea36b08581d072ae0d3a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1b4d346fd14fbb12c448cada832a5f2abeea10b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_3128a621e91228eb5cf9f9a724671edcfee2d68a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/fa4ffcede051ddf0410fe46caa3f768687f8bb0f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fdd4ca63c69e69d945e300b9194a04238186628b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_87cf90f0a151748db41dc3f49fc964942c2c44ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/df6c9507c1ab22aa14637663a9cb6515541210ce/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_440d5315243994ed4a4a368db2f998071091de1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/vanson/.android/build-cache/357c1857e8a02a02132ee963f4dbecdafbc8e7c2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/vanson/Documents/AndroidStudioProject/Certificate_Motor_A1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_630c7edfae163cb74f915df79a77c781498eb2a8/classes.dex" />
+    </item>
+
+</items>
