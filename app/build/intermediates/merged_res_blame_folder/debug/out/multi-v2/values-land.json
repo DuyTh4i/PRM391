@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "C:\\Users\\Administrator\\Desktop\\PRM391\\PRM391\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "/Users/thai.doduy/.gradle/caches/transforms-3/5a04e77f8117fbd322cf993be49e16fa/transformed/appcompat-1.0.0/res/values-land/values-land.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-3\\5a04e77f8117fbd322cf993be49e16fa\\transformed\\appcompat-1.0.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/thai.doduy/.gradle/caches/transforms-3/b098dde000b81f81d847fce16ad3bc04/transformed/material-1.0.0/res/values-land/values-land.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-3\\b098dde000b81f81d847fce16ad3bc04\\transformed\\material-1.0.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

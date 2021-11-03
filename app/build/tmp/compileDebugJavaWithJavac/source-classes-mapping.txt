@@ -1,10 +1,10 @@
+com/fithou/vanson/certificate_motor_a1/activities/LearningActivity.java
+ com.fithou.vanson.certificate_motor_a1.activities.LearningActivity
+ com.fithou.vanson.certificate_motor_a1.activities.LearningActivity$1
 com/fithou/vanson/certificate_motor_a1/activities/ContestWelcome.java
  com.fithou.vanson.certificate_motor_a1.activities.ContestWelcome
  com.fithou.vanson.certificate_motor_a1.activities.ContestWelcome$1
  com.fithou.vanson.certificate_motor_a1.activities.ContestWelcome$2
-com/fithou/vanson/certificate_motor_a1/activities/LearningActivity.java
- com.fithou.vanson.certificate_motor_a1.activities.LearningActivity
- com.fithou.vanson.certificate_motor_a1.activities.LearningActivity$1
 com/fithou/vanson/certificate_motor_a1/model/Custom_Row_Navigation.java
  com.fithou.vanson.certificate_motor_a1.model.Custom_Row_Navigation
 com/fithou/vanson/certificate_motor_a1/activities/LearningDetail.java
@@ -15,10 +15,12 @@ com/fithou/vanson/certificate_motor_a1/model/Custom_Row_Answer.java
  com.fithou.vanson.certificate_motor_a1.model.Custom_Row_Answer
 com/fithou/vanson/certificate_motor_a1/adapter/Custom_ListView_Answer.java
  com.fithou.vanson.certificate_motor_a1.adapter.Custom_ListView_Answer
-com/fithou/vanson/certificate_motor_a1/model/Question.java
- com.fithou.vanson.certificate_motor_a1.model.Question
 com/fithou/vanson/certificate_motor_a1/adapter/Custom_ListView_Navigation.java
  com.fithou.vanson.certificate_motor_a1.adapter.Custom_ListView_Navigation
+com/fithou/vanson/certificate_motor_a1/model/Question.java
+ com.fithou.vanson.certificate_motor_a1.model.Question
+com/fithou/vanson/certificate_motor_a1/activities/MainActivity.java
+ com.fithou.vanson.certificate_motor_a1.activities.MainActivity
 com/fithou/vanson/certificate_motor_a1/activities/ContestDetail.java
  com.fithou.vanson.certificate_motor_a1.activities.ContestDetail
  com.fithou.vanson.certificate_motor_a1.activities.ContestDetail$1
@@ -29,8 +31,6 @@ com/fithou/vanson/certificate_motor_a1/activities/ContestDetail.java
  com.fithou.vanson.certificate_motor_a1.activities.ContestDetail$5
  com.fithou.vanson.certificate_motor_a1.activities.ContestDetail$6
  com.fithou.vanson.certificate_motor_a1.activities.ContestDetail$7
-com/fithou/vanson/certificate_motor_a1/activities/MainActivity.java
- com.fithou.vanson.certificate_motor_a1.activities.MainActivity
 com/fithou/vanson/certificate_motor_a1/BuildConfig.java
  com.fithou.vanson.certificate_motor_a1.BuildConfig
 com/fithou/vanson/certificate_motor_a1/model/myResource.java
