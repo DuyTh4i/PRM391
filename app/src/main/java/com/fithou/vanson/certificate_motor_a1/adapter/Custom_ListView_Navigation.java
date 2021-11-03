@@ -12,10 +12,6 @@ import com.fithou.vanson.certificate_motor_a1.model.Custom_Row_Navigation;
 
 import java.util.ArrayList;
 
-/**
- * Created by vanso on 4/7/2017.
- */
-
 public class Custom_ListView_Navigation extends ArrayAdapter<Custom_Row_Navigation> {
 
     private ArrayList<Custom_Row_Navigation> res;

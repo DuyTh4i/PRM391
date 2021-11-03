@@ -11,11 +11,15 @@
         <entry key="..\:/Users/Administrator/Desktop/Certificate_Motor_A1-master/app/src/main/res/layout/custom_actionbar.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/Desktop/Certificate_Motor_A1-master/app/src/main/res/layout/custom_listview_learning.xml" value="0.21875" />
         <entry key="..\:/Users/Administrator/Desktop/Certificate_Motor_A1-master/app/src/main/res/layout/custom_listview_navigation.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/border.xml" value="0.22083333333333333" />
+        <entry key="app/src/main/res/layout/activity_contest_detail.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/layout/activity_contest_welcome.xml" value="0.22239583333333332" />
-        <entry key="app/src/main/res/layout/activity_learning.xml" value="0.22239583333333332" />
-        <entry key="app/src/main/res/layout/activity_learning_detail.xml" value="0.22239583333333332" />
+        <entry key="app/src/main/res/layout/activity_learning.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_learning_detail.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/custom_actionbar.xml" value="0.22239583333333332" />
+        <entry key="app/src/main/res/layout/custom_listview_learning.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/custom_listview_navigation.xml" value="0.21197916666666666" />
       </map>
     </option>
   </component>

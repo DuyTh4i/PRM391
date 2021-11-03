@@ -19,14 +19,16 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
+
             <TextView
                 android:id="@+id/learning_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:paddingTop="5dp"
-                android:textColor="@color/colorPrimary3"
-                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?"/>
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/learning_image_question"
@@ -36,10 +38,10 @@
                 android:layout_height="wrap_content" />
 
             <ListView
-                android:layout_below="@+id/learning_image_question"
                 android:id="@+id/layout_learning_answer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_below="@+id/learning_image_question"
                 android:layout_marginTop="10dp">
 
             </ListView>

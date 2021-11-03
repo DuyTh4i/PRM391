@@ -619,6 +619,7 @@ int color colorPrimary4 0x7f050032
 int color colorPrimary5 0x7f050033
 int color colorPrimary6 0x7f050034
 int color colorPrimaryDark 0x7f050035
+int color custom_blue 0x7f05008d
 int color custom_row_default 0x7f050036
 int color design_bottom_navigation_shadow_color 0x7f050037
 int color design_default_color_primary 0x7f050038
@@ -1008,6 +1009,7 @@ int drawable abc_textfield_search_material 0x7f070058
 int drawable abc_vector_test 0x7f070059
 int drawable avd_hide_password 0x7f07005a
 int drawable avd_show_password 0x7f07005b
+int drawable border 0x7f070077
 int drawable design_bottom_navigation_item_background 0x7f07005c
 int drawable design_fab_background 0x7f07005d
 int drawable design_ic_visibility 0x7f07005e
@@ -1184,7 +1186,6 @@ int id layout_learning_0 0x7f080091
 int id layout_learning_1 0x7f080092
 int id layout_learning_2 0x7f080093
 int id layout_learning_3 0x7f080094
-int id layout_learning_4 0x7f080095
 int id layout_learning_answer 0x7f080096
 int id layout_learning_lvdrawer 0x7f080097
 int id lear_cus_btn 0x7f080098

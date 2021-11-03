@@ -4,10 +4,6 @@
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/ic_check_circle_white_36dp.png"
     },
     {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-hdpi_khainiem.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/khainiem.png"
-    },
-    {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-mdpi_icon.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/icon.png"
     },
@@ -24,10 +20,6 @@
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-mdpi_canhbao.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/canhbao.png"
-    },
-    {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_check_white_36dp.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xhdpi/ic_check_white_36dp.png"
     },
@@ -40,6 +32,10 @@
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/icon.png"
     },
     {
+        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/drawable_border.xml.flat",
+        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/drawable/border.xml"
+    },
+    {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
@@ -50,10 +46,6 @@
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/layout_activity_contest_detail.xml.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/layout/activity_contest_detail.xml"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_khainiem.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxhdpi/khainiem.png"
     },
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-mdpi_tatca.png.flat",
@@ -108,16 +100,8 @@
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_canhbao.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxhdpi/canhbao.png"
-    },
-    {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_check_circle_white_36dp.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxhdpi/ic_check_circle_white_36dp.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-hdpi_canhbao.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/canhbao.png"
     },
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -134,10 +118,6 @@
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_chevron_left_white_36dp.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/ic_chevron_left_white_36dp.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xhdpi_khainiem.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xhdpi/khainiem.png"
     },
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/layout_activity_learning.xml.flat",
@@ -188,10 +168,6 @@
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xhdpi/tatca.png"
     },
     {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-mdpi_khainiem.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/khainiem.png"
-    },
-    {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
@@ -218,14 +194,6 @@
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_android_white_18dp.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/ic_android_white_18dp.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-hdpi_sahinh.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/sahinh.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-hdpi_daoduc.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/daoduc.png"
     },
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_chevron_right_white_36dp.png.flat",
@@ -280,14 +248,6 @@
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xhdpi/ic_check_circle_white_36dp.png"
     },
     {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xhdpi_daoduc.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xhdpi/daoduc.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-mdpi_daoduc.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/daoduc.png"
-    },
-    {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_android_white_18dp.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxxhdpi/ic_android_white_18dp.png"
     },
@@ -308,24 +268,12 @@
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/dongho.png"
     },
     {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_daoduc.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxhdpi/daoduc.png"
-    },
-    {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/layout_activity_main.xml.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_sahinh.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxhdpi/sahinh.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xhdpi_sahinh.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xhdpi/sahinh.png"
     },
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_sahinh.png.flat",
@@ -338,9 +286,5 @@
     {
         "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_question_icon.png.flat",
         "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-xxxhdpi/question_icon.png"
-    },
-    {
-        "merged": "/Users/thai.doduy/Desktop/android/PRM391/app/build/intermediates/merged_res/debug/mipmap-mdpi_sahinh.png.flat",
-        "source": "/Users/thai.doduy/Desktop/android/PRM391/app/src/main/res/mipmap-mdpi/sahinh.png"
     }
 ]

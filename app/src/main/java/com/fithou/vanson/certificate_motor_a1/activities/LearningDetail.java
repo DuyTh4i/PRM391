@@ -1,5 +1,6 @@
 package com.fithou.vanson.certificate_motor_a1.activities;
 
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -23,10 +24,6 @@ import com.fithou.vanson.certificate_motor_a1.model.Custom_Row_Answer;
 import com.fithou.vanson.certificate_motor_a1.model.Question;
 import com.fithou.vanson.certificate_motor_a1.model.myResource;
 import java.util.ArrayList;
-
-/**
- * Created by vanson on 3/23/2017.
- */
 
 public class LearningDetail extends AppCompatActivity implements View.OnClickListener{
     private DrawerLayout mDrawerLayout;
@@ -153,8 +150,10 @@ public class LearningDetail extends AppCompatActivity implements View.OnClickLis
                 setAdapterView(parent);
                 Custom_Row_Answer row = (Custom_Row_Answer) parent.getItemAtPosition(position);
                 row.setBit(!row.isBit());
+                TextView tv = (TextView) view.findViewById(R.id.lear_cus_txt);
+                tv.setTextColor(row.isBit()?Color.rgb(63,81,181):Color.rgb(0,0,0));
                 Button btn = (Button) view.findViewById(R.id.lear_cus_btn);
-                btn.setBackgroundResource(row.isBit()?R.color.colorPrimary2:R.color.white);
+                btn.setBackgroundResource(row.isBit()?R.color.colorPrimary:R.color.white);
             }
         });
         setRowIndexSelected(index);

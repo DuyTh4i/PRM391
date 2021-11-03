@@ -13,10 +13,6 @@ import com.fithou.vanson.certificate_motor_a1.model.Custom_Row_Answer;
 
 import java.util.ArrayList;
 
-/**
- * Created by vanson on 3/22/2017.
- */
-
 public class Custom_ListView_Answer extends ArrayAdapter<Custom_Row_Answer> {
     private ArrayList<Custom_Row_Answer> myArray;
     private Drawable drawable;

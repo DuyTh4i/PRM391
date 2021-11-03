@@ -620,6 +620,7 @@ color colorPrimary4
 color colorPrimary5
 color colorPrimary6
 color colorPrimaryDark
+color custom_blue
 color custom_row_default
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
@@ -1009,6 +1010,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable border
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1185,7 +1187,6 @@ id layout_learning_0
 id layout_learning_1
 id layout_learning_2
 id layout_learning_3
-id layout_learning_4
 id layout_learning_answer
 id layout_learning_lvdrawer
 id lear_cus_btn
