@@ -22,15 +22,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         // Ẩn Actionbar
         getSupportActionBar().hide();
-        myFont();
     }
 
-    // Thay đổi font chữ của tiêu đề
-    private void myFont(){
-        TextView activity_Title = (TextView) findViewById(R.id.activity_Title);
-        Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/SVN-Smirk.otf");
-        activity_Title.setTypeface(custom_font);
-    }
 
     // Chứa dựng sự kiện click cho các thành phần trong layout
     public void onClick(View v){
