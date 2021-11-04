@@ -17,8 +17,6 @@
         android:textSize="28dp"
         android:textStyle="bold" />
 
-    <!--Layout 1-->
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -36,7 +34,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-        <!--Học-->
+
         <LinearLayout
             android:id="@+id/layout_Learning"
             android:layout_width="0dp"
@@ -47,8 +45,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@mipmap/mucunhan" />
@@ -70,7 +68,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-        <!--Thi-->
+
         <LinearLayout
             android:id="@+id/layout_Contest"
             android:layout_width="0dp"
@@ -80,8 +78,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@mipmap/dongho" />
@@ -105,9 +103,6 @@
             android:layout_weight="1" />
     </LinearLayout>
 
-    <!--Layout 2-->
-
-    <!--Layout 2-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -119,7 +114,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-        <!--Tra cứu luật-->
+
         <LinearLayout
             android:id="@+id/layout_SearchRule"
             android:layout_width="0dp"
@@ -129,8 +124,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@mipmap/ic_search_white_36dp" />
@@ -152,9 +147,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-        <!--Kinh nghiệm-->
+
         <LinearLayout
-            android:id="@+id/layout_Exp"
+            android:id="@+id/layout_TrafficSign"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="4"
@@ -162,8 +157,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@mipmap/bienbao" />
@@ -198,7 +193,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-        <!--Hỏi đáp-->
+
         <LinearLayout
             android:id="@+id/layout_Feedback"
             android:layout_width="0dp"
@@ -208,8 +203,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@mipmap/question_icon" />
@@ -231,7 +226,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
-        <!--Về chúng tôi-->
+
         <LinearLayout
             android:id="@+id/layout_AppInfo"
             android:layout_width="0dp"
@@ -241,8 +236,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@mipmap/ic_android_white_18dp" />

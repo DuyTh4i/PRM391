@@ -1,4 +1,4 @@
-package com.fithou.PRM391.getDriverLicense.adapter;
+package PRM391.getDriverLicense.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,8 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.fithou.PRM391.getDriverLicense.R;
-import com.fithou.PRM391.getDriverLicense.model.Custom_Row_Navigation;
+import PRM391.getDriverLicense.R;
+import PRM391.getDriverLicense.model.Custom_Row_Navigation;
 
 import java.util.ArrayList;
 
