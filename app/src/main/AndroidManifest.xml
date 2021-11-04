@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fithou.vanson.certificate_motor_a1">
+    package="com.fithou.PRM391.getDriverLicense">
 
     <application
         android:allowBackup="true"
@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity android:name="com.fithou.PRM391.getDriverLicense.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.LearningActivity"></activity>
-        <activity android:name=".activities.LearningDetail"></activity>
-        <activity android:name=".activities.ContestWelcome"></activity>
-        <activity android:name=".activities.ContestDetail"></activity>
+        <activity android:name="com.fithou.PRM391.getDriverLicense.activities.LearningActivity"></activity>
+        <activity android:name="com.fithou.PRM391.getDriverLicense.activities.LearningDetail"></activity>
+        <activity android:name="com.fithou.PRM391.getDriverLicense.activities.ContestWelcome"></activity>
+        <activity android:name="com.fithou.PRM391.getDriverLicense.activities.ContestDetail"></activity>
     </application>
 
 </manifest>
