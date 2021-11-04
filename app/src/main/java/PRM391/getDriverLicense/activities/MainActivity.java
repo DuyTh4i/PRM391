@@ -1,4 +1,4 @@
-package com.fithou.PRM391.getDriverLicense.activities;
+package PRM391.getDriverLicense.activities;
 
 import android.content.Intent;
 
@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.fithou.PRM391.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,14 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // Click layout, button Thi
                 intent = new Intent(this,ContestWelcome.class);
                 break;
-            case R.id.layout_SearchRule:
-                // Click layout, button tra cứu luật
-                break;
-            case R.id.layout_AppInfo:
-                // Click layout, button thông tin ứng dụng
+            case R.id.layout_TrafficSign:
+                // Click layout, button biển báo
+                intent = new Intent(this,TrafficSignActivity.class);
                 break;
             default:
-                Toast.makeText(this, "Chức năng chưa được sử dụng", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Chức năng chưa được phát triển", Toast.LENGTH_SHORT).show();
                 break;
         }
         try{

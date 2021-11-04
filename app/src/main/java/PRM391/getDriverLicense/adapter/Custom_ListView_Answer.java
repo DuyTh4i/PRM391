@@ -1,4 +1,4 @@
-package com.fithou.PRM391.getDriverLicense.adapter;
+package PRM391.getDriverLicense.adapter;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -8,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-import com.fithou.PRM391.getDriverLicense.R;
-import com.fithou.PRM391.getDriverLicense.model.Custom_Row_Answer;
+import PRM391.getDriverLicense.R;
+import PRM391.getDriverLicense.model.Custom_Row_Answer;
 
 import java.util.ArrayList;
 

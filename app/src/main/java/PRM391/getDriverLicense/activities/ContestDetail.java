@@ -1,4 +1,4 @@
-package com.fithou.PRM391.getDriverLicense.activities;
+package PRM391.getDriverLicense.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -18,11 +18,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
-import com.fithou.PRM391.getDriverLicense.R;
-import com.fithou.PRM391.getDriverLicense.adapter.Custom_ListView_Answer;
-import com.fithou.PRM391.getDriverLicense.model.Custom_Row_Answer;
-import com.fithou.PRM391.getDriverLicense.model.Question;
-import com.fithou.PRM391.getDriverLicense.model.myResource;
+import PRM391.getDriverLicense.R;
+import PRM391.getDriverLicense.adapter.Custom_ListView_Answer;
+import PRM391.getDriverLicense.model.Custom_Row_Answer;
+import PRM391.getDriverLicense.model.Question;
+import PRM391.getDriverLicense.model.myResource;
 import java.util.ArrayList;
 import java.util.Random;
 
