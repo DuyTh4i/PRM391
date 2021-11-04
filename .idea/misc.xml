@@ -11,9 +11,11 @@
         <entry key="..\:/Users/Administrator/Desktop/Certificate_Motor_A1-master/app/src/main/res/layout/custom_actionbar.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/Desktop/Certificate_Motor_A1-master/app/src/main/res/layout/custom_listview_learning.xml" value="0.21875" />
         <entry key="..\:/Users/Administrator/Desktop/Certificate_Motor_A1-master/app/src/main/res/layout/custom_listview_navigation.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2930253623188406" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
@@ -58,5 +60,5 @@
       </value>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
