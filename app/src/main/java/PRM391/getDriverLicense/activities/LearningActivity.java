@@ -1,4 +1,4 @@
-package com.fithou.PRM391.getDriverLicense.activities;
+package PRM391.getDriverLicense.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.ActionBar;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.fithou.PRM391.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 
 public class LearningActivity extends AppCompatActivity implements View.OnClickListener {
     @Override

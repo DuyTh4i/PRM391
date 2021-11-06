@@ -1,4 +1,4 @@
-package com.fithou.PRM391.getDriverLicense.model;
+package PRM391.getDriverLicense.model;
 
 import java.util.ArrayList;
 

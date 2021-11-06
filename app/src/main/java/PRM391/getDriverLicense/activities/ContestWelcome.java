@@ -1,4 +1,4 @@
-package com.fithou.PRM391.getDriverLicense.activities;
+package PRM391.getDriverLicense.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.fithou.PRM391.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 
 import org.jetbrains.annotations.Nullable;
 
