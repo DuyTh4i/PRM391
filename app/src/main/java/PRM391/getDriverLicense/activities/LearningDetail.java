@@ -1,5 +1,6 @@
 package PRM391.getDriverLicense.activities;
 
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -17,16 +18,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 import PRM391.getDriverLicense.adapter.Custom_ListView_Answer;
 import PRM391.getDriverLicense.model.Custom_Row_Answer;
 import PRM391.getDriverLicense.model.Question;
 import PRM391.getDriverLicense.model.myResource;
 import java.util.ArrayList;
-
-/**
- * Created by vanson on 3/23/2017.
- */
 
 public class LearningDetail extends AppCompatActivity implements View.OnClickListener{
     private DrawerLayout mDrawerLayout;
@@ -144,7 +141,7 @@ public class LearningDetail extends AppCompatActivity implements View.OnClickLis
             array.add(new Custom_Row_Answer(answer,false));
         }
 
-        Custom_ListView_Answer adapter = new Custom_ListView_Answer(this,R.layout.custom_listview_learning,array);
+        Custom_ListView_Answer adapter = new Custom_ListView_Answer(this,R.layout.custom_listview_learning,array,myResource.getDrawable(getAssets(),"checked.png"));
         listView_Answer.setAdapter(adapter);
 
         listView_Answer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -153,8 +150,14 @@ public class LearningDetail extends AppCompatActivity implements View.OnClickLis
                 setAdapterView(parent);
                 Custom_Row_Answer row = (Custom_Row_Answer) parent.getItemAtPosition(position);
                 row.setBit(!row.isBit());
+                TextView tv = (TextView) view.findViewById(R.id.lear_cus_txt);
+                tv.setTextColor(row.isBit()?Color.rgb(63,81,181):Color.BLACK);
                 Button btn = (Button) view.findViewById(R.id.lear_cus_btn);
-                btn.setBackgroundResource(row.isBit()?R.color.colorPrimary2:R.color.white);
+                //Thay doi dau tich vao button
+                if (row.isBit())
+                    btn.setBackground(myResource.getDrawable(getAssets(),"checked.png"));
+                else
+                    btn.setBackgroundResource(R.color.white);
             }
         });
         setRowIndexSelected(index);

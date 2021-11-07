@@ -7,14 +7,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 import PRM391.getDriverLicense.model.Custom_Row_Navigation;
 
 import java.util.ArrayList;
-
-/**
- * Created by vanso on 4/7/2017.
- */
 
 public class Custom_ListView_Navigation extends ArrayAdapter<Custom_Row_Navigation> {
 

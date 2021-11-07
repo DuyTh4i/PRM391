@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 31
     defaultConfig {
-        applicationId "com.fithou.vanson.certificate_motor_a1"
+        applicationId "com.fithou.vanson.getDriverLicense"
         minSdkVersion 29
         targetSdkVersion 29
         versionCode 1
@@ -22,14 +22,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'org.jetbrains:annotations:15.0'
-    implementation 'androidx.test:core:1.3.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    testImplementation 'junit:junit:4.12'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha08'
     implementation "androidx.drawerlayout:drawerlayout:1.1.1"
 
     def room_version = "2.3.0"

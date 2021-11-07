@@ -10,11 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.getDriverLicense.R;
-
-/**
- * Created by vanson on 3/22/2017.
- */
+import PRM391.getDriverLicense.R;
 
 public class LearningActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
@@ -71,11 +67,6 @@ public class LearningActivity extends AppCompatActivity implements View.OnClickL
             case R.id.layout_learning_3:
                 intent = new Intent(this,LearningDetail.class);
                 intent.putExtra("begin","116");
-                intent.putExtra("end","149");
-                break;
-            case R.id.layout_learning_4:
-                intent = new Intent(this,LearningDetail.class);
-                intent.putExtra("begin","0");
                 intent.putExtra("end","149");
                 break;
             default:

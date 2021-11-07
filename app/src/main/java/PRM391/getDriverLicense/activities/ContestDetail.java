@@ -23,19 +23,17 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
-
-import com.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 import PRM391.getDriverLicense.adapter.Custom_ListView_Answer;
 import PRM391.getDriverLicense.model.AppDatabase;
 import PRM391.getDriverLicense.model.Custom_Row_Answer;
 import PRM391.getDriverLicense.model.Question;
 import PRM391.getDriverLicense.model.QuestionDao;
 import PRM391.getDriverLicense.model.myResource;
-
 import java.util.ArrayList;
 import java.util.Random;
 
-public class ContestDetail extends AppCompatActivity implements View.OnClickListener {
+public class ContestDetail extends AppCompatActivity implements View.OnClickListener{
     private DrawerLayout mDrawerLayout;
     private ListView listView_Nav, listView_Answer;
     private ActionBarDrawerToggle mToggle;
@@ -72,9 +70,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             // Ẩn đáp án
             setShowRusult(false);
             setTime();
-            // hide button back
-            //btnPre.setVisibility(View.INVISIBLE);
-        } catch (Exception e) {
+        }catch (Exception e){
             Log.i("zzzzzzz", e.getMessage());
             e.printStackTrace();
         }
@@ -231,19 +227,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 try {
                     createListViewAnswer(position);
-//                    switch (position){
-//                        case 0: btnNext.setVisibility(View.VISIBLE);
-//                                btnPre.setVisibility(View.INVISIBLE);
-//                            break;
-//                        case 19:
-//                                btnPre.setVisibility(View.VISIBLE);
-//                                btnNext.setVisibility(View.INVISIBLE);
-//                            break;
-//                        default:
-//                            btnPre.setVisibility(View.VISIBLE);
-//                            btnNext.setVisibility(View.VISIBLE);
-//                            break;
-//                    }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -251,7 +235,6 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             }
         });
     }
-
 
     // Tạo custom listview các đáp án
     private void createListViewAnswer(final int index) throws Exception {
@@ -310,13 +293,11 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
                     Custom_Row_Answer row = (Custom_Row_Answer) parent.getItemAtPosition(position);
                     row.setBit(!row.isBit());
                     Button btn = (Button) view.findViewById(R.id.lear_cus_btn);
-                    // Doi mau button
-                    btn.setBackgroundResource(row.isBit() ? R.color.colorPrimary2 : R.color.white);
-//                      // Thay doi dau tich vao button
-//                    if (row.isBit())
-//                        btn.setBackground(myResource.getDrawable(getAssets(),"checked.png"));
-//                    else
-//                        btn.setBackgroundResource(R.color.white);
+                    // Thay doi dau tich vao button
+                    if (row.isBit())
+                        btn.setBackground(myResource.getDrawable(getAssets(),"checked.png"));
+                    else
+                        btn.setBackgroundResource(R.color.white);
                     // Cap nhat lai ket qua nguoi dung lua chon
                     question.setUserRsult(new ArrayList<Integer>());
                     for (int i = 0; i < question.getAnswer().size(); i++) {

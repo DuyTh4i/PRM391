@@ -11,13 +11,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 
 import org.jetbrains.annotations.Nullable;
-
-/**
- * Created by vanson on 3/23/2017.
- */
 
 public class ContestWelcome extends AppCompatActivity {
     @Override
