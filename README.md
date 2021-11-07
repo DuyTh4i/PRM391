@@ -10,3 +10,6 @@
 
 ![Screen Shot 2021-11-04 at 11 33 05](https://user-images.githubusercontent.com/59249378/140258562-8a74a73c-e0a5-43e7-a36d-b01b4ef6188f.png)
 
+* Traffic sign screen
+
+![image](https://user-images.githubusercontent.com/59249378/140615199-28c1fd3d-ea8d-44ec-b383-d470f1c91c3f.png)
