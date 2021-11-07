@@ -36,7 +36,6 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
     private ImageView imgView;
     private ArrayList<Question> arrQuestion;
     private Button btnTime, btnSubmit, btnShowResult;
-//    private Button btnPre, btnNext;
     private boolean showRusult;
 
     @Override
@@ -56,8 +55,6 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             // Ẩn đáp án
             setShowRusult(false);
             setTime();
-            // hide button back
-            //btnPre.setVisibility(View.INVISIBLE);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -180,8 +177,6 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         this.btnTime = (Button) findViewById(R.id.contest_btnTime);
         this.btnSubmit = (Button) findViewById(R.id.contest_btnSubmit);
         this.btnShowResult = (Button) findViewById(R.id.contest_btnShowResult);
-//        this.btnPre = (Button) findViewById(R.id.layout_Contest_btnPre);
-//        this.btnNext = (Button) findViewById(R.id.layout_Contest_btnNext);
     }
 
     // Tạo menu chọn câu hỏi
@@ -199,19 +194,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 try {
                     createListViewAnswer(position);
-//                    switch (position){
-//                        case 0: btnNext.setVisibility(View.VISIBLE);
-//                                btnPre.setVisibility(View.INVISIBLE);
-//                            break;
-//                        case 19:
-//                                btnPre.setVisibility(View.VISIBLE);
-//                                btnNext.setVisibility(View.INVISIBLE);
-//                            break;
-//                        default:
-//                            btnPre.setVisibility(View.VISIBLE);
-//                            btnNext.setVisibility(View.VISIBLE);
-//                            break;
-//                    }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -219,45 +202,6 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             }
         });
     }
-
-//    // Tạo menu chọn câu hỏi
-//    private void createListViewNavigation() throws Exception{
-//        ArrayList<Custom_Row_Navigation> arrList = new ArrayList<>();
-//        for (int i=0; i<=19; i++){
-//            Custom_Row_Navigation row_navigation = new Custom_Row_Navigation("Câu "+(i+1));
-//            if (arrQuestion.get(i).getUserRsult().size() > 0)
-//                row_navigation.setColor(true);
-//            arrList.add(row_navigation);
-//
-//        }
-//        ArrayAdapter<Custom_Row_Navigation> adapter = new Custom_ListView_Navigation(this,R.layout.custom_listview_navigation,arrList);
-//        listView_Nav.setAdapter(adapter);
-//        // Event click item
-//        listView_Nav.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                try {
-//                    createListViewAnswer(position);
-////                    switch (position){
-////                        case 0: btnNext.setVisibility(View.VISIBLE);
-////                                btnPre.setVisibility(View.INVISIBLE);
-////                            break;
-////                        case 19:
-////                                btnPre.setVisibility(View.VISIBLE);
-////                                btnNext.setVisibility(View.INVISIBLE);
-////                            break;
-////                        default:
-////                            btnPre.setVisibility(View.VISIBLE);
-////                            btnNext.setVisibility(View.VISIBLE);
-////                            break;
-////                    }
-//                } catch (Exception e) {
-//                    e.printStackTrace();
-//                }
-//                mDrawerLayout.closeDrawers();
-//            }
-//        });
-//    }
 
     // Tạo custom listview các đáp án
     private void createListViewAnswer(final int index) throws Exception{
