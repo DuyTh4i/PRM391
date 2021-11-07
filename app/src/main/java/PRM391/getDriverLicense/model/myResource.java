@@ -12,10 +12,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Created by vanson on 3/23/2017.
- */
-
 public class myResource {
     private StringBuilder builder;
     private InputStream is;

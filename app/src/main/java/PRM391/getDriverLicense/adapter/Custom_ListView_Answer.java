@@ -8,14 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
-import com.getDriverLicense.R;
+import PRM391.getDriverLicense.R;
 import PRM391.getDriverLicense.model.Custom_Row_Answer;
 
 import java.util.ArrayList;
-
-/**
- * Created by vanson on 3/22/2017.
- */
 
 public class Custom_ListView_Answer extends ArrayAdapter<Custom_Row_Answer> {
     private ArrayList<Custom_Row_Answer> myArray;
@@ -41,13 +37,11 @@ public class Custom_ListView_Answer extends ArrayAdapter<Custom_Row_Answer> {
         // set view
         final Custom_Row_Answer row = getMyArray().get(position);
         tv.setText(row.getText());
-        // Doi mau button binh thuong
-        btn.setBackgroundResource(row.isBit()?R.color.colorPrimary2:R.color.white);
-//        // Thay bang dau tich
-//        if (row.isBit())
-//            btn.setBackground(drawable);
-//        else
-//            btn.setBackgroundResource(R.color.white);
+        // Thay bang dau tich
+        if (row.isBit())
+            btn.setBackground(drawable);
+        else
+            btn.setBackgroundResource(R.color.white);
         // hien thi dap an dung cua he thong
         if (row.isColorBackground()) view.setBackgroundResource(R.color.colorPrimary3);
         return view;

@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="PRM391.getDriverLicense.activities.MainActivity">
+        <activity
+            android:name=".activities.TrafficSignActivity"
+            android:exported="true" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="PRM391.getDriverLicense.activities.LearningActivity"></activity>
-        <activity android:name="PRM391.getDriverLicense.activities.LearningDetail"></activity>
-        <activity android:name="PRM391.getDriverLicense.activities.ContestWelcome"></activity>
-        <activity android:name="PRM391.getDriverLicense.activities.ContestDetail"></activity>
+        <activity android:name=".activities.LearningActivity" />
+        <activity android:name=".activities.LearningDetail" />
+        <activity android:name=".activities.ContestWelcome" />
+        <activity android:name=".activities.ContestDetail" />
     </application>
 
 </manifest>
