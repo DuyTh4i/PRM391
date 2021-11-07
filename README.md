@@ -13,3 +13,12 @@
 * Traffic sign screen
 
 ![image](https://user-images.githubusercontent.com/59249378/140615199-28c1fd3d-ea8d-44ec-b383-d470f1c91c3f.png)
+
+* Main contest screen
+
+![image](https://user-images.githubusercontent.com/59249378/140633831-9a41ab30-740f-4ebb-a99b-7e12bc8e7782.png)
+
+* Contest detail screen
+
+![image](https://user-images.githubusercontent.com/59249378/140633914-bfd8746a-4727-4322-8df8-a8c96ec5cba6.png)
+
