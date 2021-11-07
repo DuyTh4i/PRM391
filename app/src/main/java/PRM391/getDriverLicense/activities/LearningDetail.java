@@ -17,11 +17,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
 import PRM391.getDriverLicense.R;
 import PRM391.getDriverLicense.adapter.Custom_ListView_Answer;
+import PRM391.getDriverLicense.model.AppDatabase;
 import PRM391.getDriverLicense.model.Custom_Row_Answer;
 import PRM391.getDriverLicense.model.Question;
+import PRM391.getDriverLicense.model.QuestionDao;
 import PRM391.getDriverLicense.model.myResource;
 import java.util.ArrayList;
 
@@ -38,11 +41,16 @@ public class LearningDetail extends AppCompatActivity implements View.OnClickLis
     private int indexBegin, indexEnd;
     private ImageButton imgBack, imgNext;
     private ImageView imgView;
+    QuestionDao questionDao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learning_detail);
+        questionDao = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "questions")
+                .allowMainThreadQueries()
+                .build()
+                .questionDao();
         initWidget();
         try {
             setIndexBegin(Integer.parseInt(getIntent().getStringExtra("begin")));
@@ -134,7 +142,8 @@ public class LearningDetail extends AppCompatActivity implements View.OnClickLis
     // Tạo custom listview các đáp án
     private void createListViewAnswer(int index) throws Exception{
         ArrayList<Custom_Row_Answer> array = new ArrayList<>();
-        Question question = getMyResource().getIndex(index);
+        Question question = questionDao.findQuestionById(index + 1);
+        question.setUserRsult(new ArrayList<>());
         setQuesSelected(question);
 
         for(String answer : question.getAnswer()){
@@ -193,7 +202,7 @@ public class LearningDetail extends AppCompatActivity implements View.OnClickLis
     // Load hình ảnh nếu có
     private void loadImage(int index){
         try{
-            String path = myResource.getIndex(index).getPathImage();
+            String path = questionDao.findQuestionById(index + 1).getPathImage();
             Drawable drawable = myResource.getDrawable(getAssets(),"image/"+path);
             imgView.setImageDrawable(drawable);
             if (path.equals("")){

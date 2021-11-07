@@ -35,19 +35,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     .allowMainThreadQueries()
                     .build();
             questionDao = db.questionDao();
-
-        try {
-            Log.i("zzzzzzz", (new myResource(getResources(), R.raw.resource)).getIndex(100).toString());
-            Question q = questionDao.findQuestionById(101);
-            q.setUserRsult(new ArrayList<Integer>());
-            Log.i("zzzzzzz", q.toString());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        setRoomDatabaseData();
-
-        //((TextView) findViewById(R.id.activity_Title)).setText(questionDao.getAll().get(0).getId() + "" );
         }
 
         public void setRoomDatabaseData() {

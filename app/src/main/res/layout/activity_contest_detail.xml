@@ -25,7 +25,7 @@
                 android:paddingTop="5dp"
                 android:text="xxxxxxxxxxxx?"
                 android:textColor="@color/black"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -44,32 +44,7 @@
 
             </ListView>
         </RelativeLayout>
-
-        <!--&lt;!&ndash;Button back and next&ndash;&gt;-->
-        <!--<RelativeLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerVertical="true"-->
-            <!--android:layout_marginBottom="50dp">-->
-
-            <!--<Button-->
-                <!--android:id="@+id/layout_Contest_btnPre"-->
-                <!--android:layout_width="50dp"-->
-                <!--android:layout_height="50dp"-->
-                <!--android:layout_alignParentLeft="true"-->
-                <!--android:background="@mipmap/ic_chevron_left_white_36dp"-->
-                <!--android:onClick="onClick"-->
-                <!--android:backgroundTint="@color/colorPrimary3" />-->
-
-            <!--<Button-->
-                <!--android:id="@+id/layout_Contest_btnNext"-->
-                <!--android:layout_width="50dp"-->
-                <!--android:layout_height="50dp"-->
-                <!--android:layout_alignParentRight="true"-->
-                <!--android:onClick="onClick"-->
-                <!--android:background="@mipmap/ic_chevron_right_white_36dp"-->
-                <!--android:backgroundTint="@color/colorPrimary3" />-->
-        <!--</RelativeLayout>-->
+      
         <!--ActionBar Button-->
         <RelativeLayout
             android:id="@+id/zzz"

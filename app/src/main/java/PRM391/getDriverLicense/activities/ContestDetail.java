@@ -46,8 +46,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
     private Button btnPre, btnNext;
     private boolean showRusult;
     int currPosition = 0;
-
-    QuestionDao questionDao ;
+    QuestionDao questionDao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
