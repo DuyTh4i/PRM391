@@ -12,11 +12,8 @@ import androidx.annotation.Nullable;
 
 import androidx.fragment.app.Fragment;
 
-import PRM391.getDriverLicense.model.myResource;
-
 public class TrafficSignFragment extends Fragment {
     public static final String ARG_PAGE = "arg_page";
-    private myResource myResource;
 
     public TrafficSignFragment() {
     }
