@@ -1,9 +1,5 @@
 package PRM391.getDriverLicense.model;
 
-/**
- * Created by vanso on 4/7/2017.
- */
-
 public class Custom_Row_Navigation {
     private String title;
     private boolean color;

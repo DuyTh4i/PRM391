@@ -12,172 +12,173 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="match_parent">
+
             <LinearLayout
                 android:id="@+id/layout_learning_0"
-                android:onClick="onClick"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@color/colorPrimary2">
+                android:background="@drawable/border"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     app:srcCompat="@mipmap/khainiem" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center" android:textColor="#ffff"
-                    android:textSize="16dp" android:textStyle="bold"
-                    android:text="KHÁI NIỆM VÀ QUY ƯỚC"/>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center"
-                    android:text="(1-75)"
-                    android:textColor="#ffff"
-                    android:textSize="12dp" />
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="287dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="KHÁI NIỆM VÀ QUY ƯỚC"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="75 câu"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/layout_learning_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:background="@drawable/border"
+                android:padding="10dp"
                 android:onClick="onClick"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary5">
+                android:orientation="horizontal"
+                >
 
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     app:srcCompat="@mipmap/daoduc" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:text="ĐẠO ĐỨC NGHỀ NGHIỆP"
-                    android:textColor="#ffff"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:layout_height="65dp"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center"
-                    android:text="(76-80)"
-                    android:textColor="#ffff"
-                    android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="ĐẠO ĐỨC NGHỀ NGHIỆP"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="5 câu"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/layout_learning_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:onClick="onClick"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary6">
+                android:background="@drawable/border"
+                android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     app:srcCompat="@mipmap/canhbao" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:text="HỆ THỐNG BIỂN BÁO"
-                    android:textColor="#ffff"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:layout_height="65dp"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center"
-                    android:text="(81-116)"
-                    android:textColor="#ffff"
-                    android:textSize="12dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="HỆ THỐNG BIỂN BÁO"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="36 câu"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/layout_learning_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:onClick="onClick"
                 android:layout_marginTop="20dp"
-                android:background="@color/colorPrimary4">
+                android:background="@drawable/border"
+                android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     app:srcCompat="@mipmap/sahinh" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:gravity="center"
-                    android:text="SA HÌNH"
-                    android:textColor="#ffff"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
+                    android:layout_height="65dp"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center"
-                    android:text="(117-150)"
-                    android:textColor="#ffff"
-                    android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="SA HÌNH"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="34 câu"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/layout_learning_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="20dp"
-                android:onClick="onClick"
-                android:background="@color/colorPrimary3">
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="15dp"
-                    app:srcCompat="@mipmap/tatca" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" android:layout_marginBottom="15dp"
-                    android:gravity="center"
-                    android:text="TẤT CẢ"
-                    android:textColor="#ffff"
-                    android:textSize="16dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

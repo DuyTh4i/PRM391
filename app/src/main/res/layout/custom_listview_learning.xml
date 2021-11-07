@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="@color/custom_row_default">
+    android:layout_height="match_parent" android:background="@color/custom_row_default"
+    android:paddingTop="10dp" android:paddingBottom="10dp">
         <Button
             android:id="@+id/lear_cus_btn"
             android:enabled="false"
@@ -14,13 +15,15 @@
             android:layout_gravity="center"
             android:background="@color/white"
             app:srcCompat="@mipmap/ic_android_white_18dp" />
+
         <TextView
             android:id="@+id/lear_cus_txt"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:paddingTop="2dp"
             android:paddingBottom="2dp"
             android:text="noi dung"
             android:textColor="#f70d0d0d"
-            android:layout_height="wrap_content" />
+            android:textSize="20sp" />
 </LinearLayout>
