@@ -17,14 +17,15 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
+
             <TextView
                 android:id="@+id/learning_question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:paddingTop="5dp"
+                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?"
                 android:textColor="@color/colorPrimary3"
-                android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?"/>
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/learning_image_question"
@@ -34,11 +35,11 @@
                 android:layout_height="wrap_content" />
 
             <ListView
-                android:layout_below="@+id/learning_image_question"
                 android:id="@+id/layout_learning_answer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp">
+                android:layout_height="519dp"
+                android:layout_below="@+id/learning_image_question"
+                android:layout_marginTop="1dp">
 
             </ListView>
         </RelativeLayout>
@@ -70,40 +71,42 @@
         <!--</RelativeLayout>-->
         <!--ActionBar Button-->
         <RelativeLayout
+            android:id="@+id/zzz"
             android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimary"
-            android:layout_height="50dp">
+            android:background="@color/colorPrimary">
 
             <Button
                 android:id="@+id/contest_btnTime"
+                style="?android:attr/borderlessButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
                 android:background="@color/colorPrimary"
+                android:onClick="onClick"
                 android:text="14:59"
                 android:textColor="@color/white"
-                style="?android:attr/borderlessButtonStyle"
-                android:onClick="onClick"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/contest_btnShowResult"
-                android:layout_width="wrap_content"
-                android:layout_marginRight="10dp"
                 style="?android:attr/borderlessButtonStyle"
-                android:text="Xem đáp án"
-                android:paddingLeft="15dp" android:paddingRight="15dp"
-                android:textColor="@color/white"
-                android:background="@color/colorPrimary2"
-                android:layout_centerVertical="true"
-                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary2"
                 android:onClick="onClick"
-                android:layout_height="36dp" />
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Xem đáp án"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
 
             <Button
                 android:id="@+id/contest_btnSubmit"
@@ -112,11 +115,36 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="10dp"
-                android:textColor="@color/white"
                 android:background="@mipmap/ic_check_circle_white_36dp"
                 android:onClick="onClick"
+                android:textColor="@color/white"
                 app:srcCompat="@mipmap/ic_check_circle_white_36dp" />
         </RelativeLayout>
+
+        <Button
+            android:id="@+id/layout_Contest_btnPre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/zzz"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="27dp"
+            android:onClick="onPreviousQuestion"
+            android:tag="-1"
+            android:text="Trước" />
+
+        <Button
+            android:id="@+id/layout_Contest_btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/zzz"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="27dp"
+            android:onClick="onPreviousQuestion"
+            android:tag="1"
+            android:text="Tiếp" />
+
     </RelativeLayout>
 
     <ListView

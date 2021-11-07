@@ -1,13 +1,49 @@
 package PRM391.getDriverLicense.model;
 
+import androidx.room.*;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+
+@Entity(tableName = "questions")
 public class Question {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
+    @ColumnInfo
     private String description; // Nội dung của câu hỏi
+
+    @ColumnInfo
     private ArrayList<String> answer; // Các đáp án để lựa chọn
+
+    @ColumnInfo
     private ArrayList<Integer> result; // Đáp án đúng
-    private String pathImage; // Đường dẫn ảnh nết có
+
+    @ColumnInfo
+    private String pathImage; // Đường dẫn ảnh nếu có
+
+    @Ignore
     private ArrayList<Integer> userRsult;
+
+    public Question(){
+
+    }
+
+    @Override
+    public String toString() {
+        return "Question{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", answer=" + answer +
+                ", result=" + result +
+                ", pathImage='" + pathImage + '\'' +
+                ", userRsult=" + userRsult +
+                '}';
+    }
 
     public Question(String _description, ArrayList<String> _answer, ArrayList<Integer> _result, String _pathImage) {
         this.description = _description;
@@ -15,6 +51,14 @@ public class Question {
         this.result = _result;
         this.pathImage = _pathImage;
         this.userRsult = new ArrayList<>();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getDescription() {

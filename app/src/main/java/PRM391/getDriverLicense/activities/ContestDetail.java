@@ -6,8 +6,11 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.drawerlayout.widget.DrawerLayout;
+
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,36 +20,48 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 import PRM391.getDriverLicense.R;
 import PRM391.getDriverLicense.adapter.Custom_ListView_Answer;
+import PRM391.getDriverLicense.model.AppDatabase;
 import PRM391.getDriverLicense.model.Custom_Row_Answer;
 import PRM391.getDriverLicense.model.Question;
+import PRM391.getDriverLicense.model.QuestionDao;
 import PRM391.getDriverLicense.model.myResource;
 import java.util.ArrayList;
 import java.util.Random;
 
 public class ContestDetail extends AppCompatActivity implements View.OnClickListener{
     private DrawerLayout mDrawerLayout;
-    private ListView listView_Nav,listView_Answer;
+    private ListView listView_Nav, listView_Answer;
     private ActionBarDrawerToggle mToggle;
-    private myResource myResource;
+    private PRM391.getDriverLicense.model.myResource myResource;
     private TextView description;
     private int rowIndexSelected;
     private ImageView imgView;
     private ArrayList<Question> arrQuestion;
     private Button btnTime, btnSubmit, btnShowResult;
+    private Button btnPre, btnNext;
     private boolean showRusult;
+    int currPosition = 0;
+
+    QuestionDao questionDao ;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contest_detail);
         // Sử dụng vuốt màn hình để chuyển đổi câu hỏi
         // Ánh xạ các đối tượng trong file layout
+        questionDao = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "questions")
+                .allowMainThreadQueries()
+                .build()
+                .questionDao();
         initWidget();
         try {
-            setMyResource(new myResource(getResources(),R.raw.resource));
+            this.myResource = new myResource(getResources(), R.raw.resource);
             // Random cau hoi
             createRandomQuestion();
             createListViewNavigation();
@@ -56,20 +71,22 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             setShowRusult(false);
             setTime();
         }catch (Exception e){
+            Log.i("zzzzzzz", e.getMessage());
             e.printStackTrace();
         }
+
     }
 
     // Chạy thời gian
-    private void setTime(){
+    private void setTime() {
         AsyncTask<Void, String, Void> asyncTask = new AsyncTask<Void, String, Void>() {
 
             @Override
             protected Void doInBackground(Void... params) {
-                for (int m=14;m>=0;m--){
-                    for (int s=59;s>=0;s--){
+                for (int m = 14; m >= 0; m--) {
+                    for (int s = 59; s >= 0; s--) {
                         if (!isShowRusult())
-                            this.publishProgress((m<10?("0"+m):m) + ":" + (s<10?("0"+s):s));
+                            this.publishProgress((m < 10 ? ("0" + m) : m) + ":" + (s < 10 ? ("0" + s) : s));
                         else
                             return null;
                         SystemClock.sleep(1000);
@@ -100,6 +117,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         };
         asyncTask.execute();
     }
+
     // Chọn 20 cau hỏi
     private void createRandomQuestion() throws Exception {
         setArrQuestion(new ArrayList<Question>());
@@ -107,12 +125,12 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
 
         Random random = new Random();
         // 9 câu khái niệm và quy tắc giao thông
-        while (arrInterger.size() < 9){
-            boolean flag=false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
+        while (arrInterger.size() < 9) {
+            boolean flag = false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
             int temp = random.nextInt(75);
 
-            for (Integer i:arrInterger){
-                if (i==temp){
+            for (Integer i : arrInterger) {
+                if (i == temp) {
                     flag = true;
                     break;
                 }
@@ -121,12 +139,12 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         }
 
         // 1 câu văn hóa và đạo đức người lái xe
-        while (arrInterger.size() < 10){
-            boolean flag=false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
+        while (arrInterger.size() < 10) {
+            boolean flag = false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
             int temp = 75 + random.nextInt(5);
 
-            for (Integer i:arrInterger){
-                if (i==temp){
+            for (Integer i : arrInterger) {
+                if (i == temp) {
                     flag = true;
                     break;
                 }
@@ -135,12 +153,12 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         }
 
         // 5 câu hệ thống biển báo
-        while (arrInterger.size() < 15){
-            boolean flag=false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
+        while (arrInterger.size() < 15) {
+            boolean flag = false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
             int temp = 80 + random.nextInt(36);
 
-            for (Integer i:arrInterger){
-                if (i==temp){
+            for (Integer i : arrInterger) {
+                if (i == temp) {
                     flag = true;
                     break;
                 }
@@ -149,12 +167,12 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         }
 
         // 5 câu giải thích xa hình
-        while (arrInterger.size() < 20){
-            boolean flag=false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
+        while (arrInterger.size() < 20) {
+            boolean flag = false; // Cờ đánh dấu đã tồn tại temp trong arrQuestoin <Tránh lấy các câu hỏi đã lấy>
             int temp = 116 + random.nextInt(34);
 
-            for (Integer i:arrInterger){
-                if (i==temp){
+            for (Integer i : arrInterger) {
+                if (i == temp) {
                     flag = true;
                     break;
                 }
@@ -163,13 +181,15 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         }
 
         //Lay cau hoi
-        for(Integer i:arrInterger){
-            getArrQuestion().add(getMyResource().getIndex(i));
+        for (Integer i : arrInterger) {
+            Question q = questionDao.findQuestionById(i + 1);
+            q.setUserRsult(new ArrayList<>());
+            getArrQuestion().add(q);
         }
     }
 
     // Khơi tạo các đối tượng widget với các đối tượng khai báo trong file layout.xml
-    private void initWidget(){
+    private void initWidget() {
         this.listView_Nav = (ListView) findViewById(R.id.layout_learning_lvdrawer);
         this.listView_Answer = (ListView) findViewById(R.id.layout_learning_answer);
         this.description = (TextView) findViewById(R.id.learning_question);
@@ -177,17 +197,30 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         this.btnTime = (Button) findViewById(R.id.contest_btnTime);
         this.btnSubmit = (Button) findViewById(R.id.contest_btnSubmit);
         this.btnShowResult = (Button) findViewById(R.id.contest_btnShowResult);
+        this.btnPre = (Button) findViewById(R.id.layout_Contest_btnPre);
+        this.btnNext = (Button) findViewById(R.id.layout_Contest_btnNext);
+    }
+
+    public void onPreviousQuestion(View view) {
+        int plus = Integer.parseInt(view.getTag().toString());
+        currPosition = (currPosition + plus + 20) % 20;
+        try {
+            createListViewAnswer(currPosition );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        mDrawerLayout.closeDrawers();
     }
 
     // Tạo menu chọn câu hỏi
-    private void createListViewNavigation() throws Exception{
+    private void createListViewNavigation() throws Exception {
         ArrayList<String> arrList = new ArrayList<>();
-        for (int i=0; i<=19; i++){
-            arrList.add("Câu "+(i+1));
+        for (int i = 0; i <= 19; i++) {
+            arrList.add("Câu " + (i + 1));
         }
-        String [] arr = arrList.toArray(new String[arrList.size()]);
+        String[] arr = arrList.toArray(new String[arrList.size()]);
 
-        ArrayAdapter<String>  adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, arr);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arr);
         listView_Nav.setAdapter(adapter);
         listView_Nav.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -204,7 +237,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
     }
 
     // Tạo custom listview các đáp án
-    private void createListViewAnswer(final int index) throws Exception{
+    private void createListViewAnswer(final int index) throws Exception {
 
         // Luu dap an nguoi dung
         ArrayList<Custom_Row_Answer> array = new ArrayList<>();
@@ -212,7 +245,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         // Lay ra 1 cau hoi trong 20 cau cua de thi
         final Question question = getArrQuestion().get(index);
 
-        for (int i=0;i<question.getAnswer().size();i++) {
+        for (int i = 0; i < question.getAnswer().size(); i++) {
             Custom_Row_Answer answer; //null
             boolean colorBg = false; // Kiểm tra xem có nằm trong đáp án không
             boolean answerTrue = false; // Kiểm tra xem có trả lời đúng không
@@ -242,13 +275,13 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         } //end For
 
         // Kiem tra xem cau hoi nay truoc do nguoi dung co chon dap an chua
-        if (question.getUserRsult() != null){
-            for(Integer i: question.getUserRsult()){
+        if (question.getUserRsult() != null) {
+            for (Integer i : question.getUserRsult()) {
                 array.get(i).setBit(true);
             }
         }
 
-        Custom_ListView_Answer adapter = new Custom_ListView_Answer(this,R.layout.custom_listview_learning,array,myResource.getDrawable(getAssets(),"checked.png"));
+        Custom_ListView_Answer adapter = new Custom_ListView_Answer(this, R.layout.custom_listview_learning, array, myResource.getDrawable(getAssets(), "checked.png"));
         listView_Answer.setAdapter(adapter);
 
         listView_Answer.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -256,7 +289,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 setAdapterView(parent);
                 // Chỉ chạy đoạn code này khi trong quá trình làm bài thi
-                if(!isShowRusult()){
+                if (!isShowRusult()) {
                     Custom_Row_Answer row = (Custom_Row_Answer) parent.getItemAtPosition(position);
                     row.setBit(!row.isBit());
                     Button btn = (Button) view.findViewById(R.id.lear_cus_btn);
@@ -267,9 +300,9 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
                         btn.setBackgroundResource(R.color.white);
                     // Cap nhat lai ket qua nguoi dung lua chon
                     question.setUserRsult(new ArrayList<Integer>());
-                    for (int i=0;i<question.getAnswer().size();i++){
+                    for (int i = 0; i < question.getAnswer().size(); i++) {
                         row = (Custom_Row_Answer) parent.getItemAtPosition(i);
-                        if (row.isBit()){
+                        if (row.isBit()) {
                             question.getUserRsult().add(i);
                         }
                     }
@@ -278,56 +311,56 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         });
         setRowIndexSelected(index);
         // update layout
-        updateLayout(index,question.getDescription());
+        updateLayout(index, question.getDescription());
     }
 
     // Cập nhật câu hỏi và title trên Actionbar
-    private void updateLayout(int index, String des){
-        if(!isShowRusult()){
-            getSupportActionBar().setTitle("Câu số "+(index+1)+"/20");
+    private void updateLayout(int index, String des) {
+        if (!isShowRusult()) {
+            getSupportActionBar().setTitle("Câu số " + (index + 1) + "/20");
         }
         setDescription(des);
         loadImage(index);
     }
 
     // Tạo Toogle(Button trên ActionBar dùng để đóng mở menu chọn lựa đáp án)
-    private void createToggle(){
+    private void createToggle() {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_learning);
-        mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open,R.string.close);
+        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     // Load hình ảnh nếu có
-    private void loadImage(int index){
-        try{
+    private void loadImage(int index) {
+        try {
             String path = getArrQuestion().get(index).getPathImage();
-            Drawable drawable = myResource.getDrawable(getAssets(),"image/"+path);
+            Drawable drawable = myResource.getDrawable(getAssets(), "image/" + path);
             imgView.setImageDrawable(drawable);
-            if (path.equals("")){
+            if (path.equals("")) {
                 imgView.setMaxHeight(0);
                 imgView.setMinimumHeight(0);
-            }
-            else{
+            } else {
                 imgView.setMinimumHeight(300);
                 imgView.setMaxHeight(300);
             }
 
-        }catch(Exception e){}
+        } catch (Exception e) {
+        }
     }
 
     // Hoàn thành bài thi
-    private void SubmitContest(){
-        int count=0;
-        for (int i=0;i<20;i++){
+    private void SubmitContest() {
+        int count = 0;
+        for (int i = 0; i < 20; i++) {
             Question question = getArrQuestion().get(i);
-            if (myCompare(question.getUserRsult(),question.getResult())) count++;
+            if (myCompare(question.getUserRsult(), question.getResult())) count++;
         }
-        if(count>=18){
-            getSupportActionBar().setTitle("Kết quả: ĐẠT "+count+"/22");
-        }else{
-            getSupportActionBar().setTitle("Kết quả: Rớt "+count+"/22");
+        if (count >= 18) {
+            getSupportActionBar().setTitle("Kết quả: ĐẠT " + count + "/22");
+        } else {
+            getSupportActionBar().setTitle("Kết quả: Rớt " + count + "/22");
         }
         // Cho phép hiện đáp án
         btnTime.setBackgroundResource(R.color.colorPrimary6);
@@ -336,39 +369,39 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
     }
 
     // kiểm tra đáp án người dùng lựa chọn có đúng không ?
-    private boolean myCompare(ArrayList<Integer> arr0, ArrayList<Integer> arr1){
-        boolean flag=true; // Cờ kiểm
+    private boolean myCompare(ArrayList<Integer> arr0, ArrayList<Integer> arr1) {
+        boolean flag = true; // Cờ kiểm
 
         /*true: là trùng đáp án.
-        * false: không trùng đáp án.
-        * */
+         * false: không trùng đáp án.
+         * */
 
         // Không trùng nhau vì số lượng đáp án không bằng nhau
         if (arr0.size() != arr1.size()) return false;
-        // Đáp án không khớp nhau
-        else{
-            for (int i=0;i<arr0.size();i++)
-                if (arr0.get(i)!=arr1.get(i)) return false;
+            // Đáp án không khớp nhau
+        else {
+            for (int i = 0; i < arr0.size(); i++)
+                if (arr0.get(i) != arr1.get(i)) return false;
         }
         return flag;
     }
 
     // Sự kiện click vào nộp bài
-    private void btnSubmit_Click(){
+    private void btnSubmit_Click() {
         // Sự kiện sảy ra khi mà người dùng đang làm bài thi và chưa ấn nộp bài
-        if (!isShowRusult()){
-            boolean flag=false; //kiểm tra xem đã làm hết các câu hỏi chưa
+        if (!isShowRusult()) {
+            boolean flag = false; //kiểm tra xem đã làm hết các câu hỏi chưa
 
             Question question;
-            for(int i=0;i<20;i++){
+            for (int i = 0; i < 20; i++) {
                 question = getArrQuestion().get(i);
-                if (question.getUserRsult().size()==0){
+                if (question.getUserRsult().size() == 0) {
                     flag = true;
                     break;
                 }
             }
 
-            if (flag){
+            if (flag) {
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(ContestDetail.this)
                         .setTitle("Thông báo")
                         .setMessage("Bạn chưa hoàn thành bài thi ! Bạn có thực sự muốn nộp bài ?")
@@ -392,8 +425,8 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
     }
 
     // Sự kiện click vào thi lại
-    private void btnTime_Click(){
-        if (isShowRusult()){
+    private void btnTime_Click() {
+        if (isShowRusult()) {
             try {
                 createRandomQuestion();
                 setShowRusult(false);
@@ -409,7 +442,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
     }
 
     // Sự kiện click vào xem đáp án
-    private void btnShowResult_Click(){
+    private void btnShowResult_Click() {
         try {
             createListViewAnswer(getRowIndexSelected());
             btnShowResult.setVisibility(View.INVISIBLE);
@@ -418,7 +451,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    public void onBackPressed(boolean back){
+    public void onBackPressed(boolean back) {
         if (back) super.onBackPressed();
     }
 
@@ -481,11 +514,17 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
 
     // Sự kiện click vào các view tương ứng
     @Override
-    public void onClick(View v){
-        switch (v.getId()){
-            case R.id.contest_btnSubmit: btnSubmit_Click(); break;
-            case R.id.contest_btnTime: btnTime_Click(); break;
-            case R.id.contest_btnShowResult: btnShowResult_Click();break;
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.contest_btnSubmit:
+                btnSubmit_Click();
+                break;
+            case R.id.contest_btnTime:
+                btnTime_Click();
+                break;
+            case R.id.contest_btnShowResult:
+                btnShowResult_Click();
+                break;
 //            case R.id.layout_Contest_btnNext:
 //                try {
 //                    if(getRowIndexSelected()<19){

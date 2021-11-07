@@ -17,25 +17,18 @@ public class myResource {
     private InputStream is;
 
     // Hàm khởi tạo
-    public myResource(){}
     public myResource(Resources getResouce, int res){
         try {
             InputStream IS = getResouce.openRawResource(res);
             setIs(IS);
-        }catch (Exception e){e.printStackTrace();}
-    }
-
-    // Đọc file JSON
-    public boolean readResouce(){
-        if (getIs() != null){
-            Scanner scanner = new Scanner(getIs());
-            setBuilder(new StringBuilder());
-            while (scanner.hasNextLine()){
-                getBuilder().append(scanner.nextLine());
+            if (getIs() != null){
+                Scanner scanner = new Scanner(getIs());
+                setBuilder(new StringBuilder());
+                while (scanner.hasNextLine()){
+                    getBuilder().append(scanner.nextLine());
+                }
             }
-            return true;
-        }else
-            return  false;
+        }catch (Exception e){e.printStackTrace();}
     }
 
     // Lấy text từ file JSON
@@ -51,10 +44,6 @@ public class myResource {
     // Lấy câu hỏi theo index
     public Question getIndex(int index) throws Exception{
         Question question = null;
-
-        if (getBuilder() == null){
-            readResouce();
-        }
 
         JSONObject object = ArrayJSON().getJSONObject(index);
         String des = object.getString("description").toString();
