@@ -4,7 +4,7 @@ public class Custom_Row_Navigation {
     private String title;
     private boolean color;
 
-    public Custom_Row_Navigation(String title){
+    public Custom_Row_Navigation(String title) {
         this.title = title;
     }
 

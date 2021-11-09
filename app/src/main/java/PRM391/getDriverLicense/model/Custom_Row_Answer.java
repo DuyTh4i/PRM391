@@ -9,7 +9,7 @@ public class Custom_Row_Answer {
     // Chon đặt màu nền không
     private boolean colorBackground;
 
-    public Custom_Row_Answer(String _text,boolean _setColorBg){
+    public Custom_Row_Answer(String _text, boolean _setColorBg) {
         this.text = _text;
         this.colorBackground = _setColorBg;
     }

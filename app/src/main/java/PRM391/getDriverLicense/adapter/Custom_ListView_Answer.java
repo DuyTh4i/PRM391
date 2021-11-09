@@ -31,7 +31,7 @@ public class Custom_ListView_Answer extends ArrayAdapter<Custom_Row_Answer> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(getContext());
-        View view = inflater.inflate(R.layout.custom_listview_learning,parent,false);
+        View view = inflater.inflate(R.layout.custom_listview_learning, parent, false);
         Button btn =(Button) view.findViewById(R.id.lear_cus_btn);
         TextView tv = (TextView) view.findViewById(R.id.lear_cus_txt);
         // set view

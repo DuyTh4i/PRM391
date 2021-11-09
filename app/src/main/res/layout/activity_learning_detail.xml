@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_learning"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:ignore="MissingClass">
 
     <RelativeLayout
@@ -32,16 +32,16 @@
 
             <ImageView
                 android:id="@+id/learning_image_question"
-                android:layout_marginTop="10dp"
-                android:layout_below="@+id/learning_question"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/learning_question"
+                android:layout_marginTop="10dp" />
 
             <ListView
-                android:layout_below="@+id/learning_image_question"
                 android:id="@+id/layout_learning_answer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_below="@+id/learning_image_question"
                 android:layout_marginTop="10dp">
 
             </ListView>
@@ -50,9 +50,9 @@
         <!--ActionBar Button-->
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/colorPrimary"
-            android:layout_height="50dp">
+            android:background="@color/colorPrimary">
 
             <ImageButton
                 android:id="@+id/learning_btnBack"

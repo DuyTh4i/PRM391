@@ -1,4 +1,4 @@
-package PRM391.getDriverLicense.activities;
+package PRM391.getDriverLicense.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -7,6 +7,7 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import PRM391.getDriverLicense.R;
+import PRM391.getDriverLicense.activities.TrafficSignFragment;
 
 public class ViewStateAdapter extends FragmentStateAdapter {
 
@@ -18,8 +19,7 @@ public class ViewStateAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         int resource = R.drawable.bienbaocam;
-        switch (position)
-        {
+        switch (position) {
             case 0:
                 resource = R.drawable.bienbaocam;
                 break;

@@ -22,10 +22,10 @@ public class Custom_ListView_Navigation extends ArrayAdapter<Custom_Row_Navigati
     }
 
     @Override
-    public View getView(int position,View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = LayoutInflater.from(getContext());
-        View view = inflater.inflate(R.layout.custom_listview_navigation,parent,false);
-        TextView textView = (TextView)view.findViewById(R.id.textView_custom_navigation);
+        View view = inflater.inflate(R.layout.custom_listview_navigation, parent, false);
+        TextView textView = (TextView) view.findViewById(R.id.textView_custom_navigation);
         textView.setText(res.get(position).getTitle());
         if (res.get(position).isColor())
             view.setBackgroundResource(R.color.colorPrimary2);

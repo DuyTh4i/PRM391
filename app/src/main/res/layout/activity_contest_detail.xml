@@ -30,10 +30,10 @@
 
             <ImageView
                 android:id="@+id/learning_image_question"
-                android:layout_marginTop="10dp"
-                android:layout_below="@+id/learning_question"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/learning_question"
+                android:layout_marginTop="10dp" />
 
             <ListView
                 android:id="@+id/layout_learning_answer"
@@ -44,7 +44,7 @@
 
             </ListView>
         </RelativeLayout>
-      
+
         <!--ActionBar Button-->
         <RelativeLayout
             android:id="@+id/zzz"

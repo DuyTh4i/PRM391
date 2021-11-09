@@ -18,7 +18,7 @@ public class TrafficSignFragment extends Fragment {
     public TrafficSignFragment() {
     }
 
-    public TrafficSignFragment newInstance(int resource){
+    public TrafficSignFragment newInstance(int resource) {
         TrafficSignFragment fragment = new TrafficSignFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, resource);

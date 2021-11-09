@@ -17,32 +17,34 @@ public class myResource {
     private InputStream is;
 
     // Hàm khởi tạo
-    public myResource(Resources getResouce, int res){
+    public myResource(Resources getResouce, int res) {
         try {
             InputStream IS = getResouce.openRawResource(res);
             setIs(IS);
-            if (getIs() != null){
+            if (getIs() != null) {
                 Scanner scanner = new Scanner(getIs());
                 setBuilder(new StringBuilder());
-                while (scanner.hasNextLine()){
+                while (scanner.hasNextLine()) {
                     getBuilder().append(scanner.nextLine());
                 }
             }
-        }catch (Exception e){e.printStackTrace();}
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     // Lấy text từ file JSON
-    public String toString(){
+    public String toString() {
         return builder.toString();
     }
 
     // Chuyển đổi text thành đối tượng JSON Array
-    public JSONArray ArrayJSON() throws Exception{
+    public JSONArray ArrayJSON() throws Exception {
         return new JSONArray(toString());
     }
 
     // Lấy câu hỏi theo index
-    public Question getIndex(int index) throws Exception{
+    public Question getIndex(int index) throws Exception {
         Question question = null;
 
         JSONObject object = ArrayJSON().getJSONObject(index);
@@ -50,36 +52,35 @@ public class myResource {
         ArrayList<String> ans = new ArrayList<>();
         ArrayList<Integer> rlt = new ArrayList<>();
         JSONArray tempArr = object.getJSONArray("answer");
-        for (int i=0;i<tempArr.length();i++){
+        for (int i = 0; i < tempArr.length(); i++) {
             ans.add(tempArr.getString(i).toString());
         }
         tempArr = object.getJSONArray("result");
-        for (int i=0;i<tempArr.length();i++){
+        for (int i = 0; i < tempArr.length(); i++) {
             rlt.add(tempArr.getInt(i));
         }
         String path = object.getString("pathImage");
-        question = new Question(des,ans,rlt,path);
+        question = new Question(des, ans, rlt, path);
         return question;
     }
 
     // Lấy câu hỏi theo vị trí từ bao nhiêu cho tới bao nhiêu
-    public ArrayList<Question> getIndex(int begin, int end) throws Exception{
-        ArrayList<Question> arrayList=null;
-        for (int i=begin;i<=end;i++){
+    public ArrayList<Question> getIndex(int begin, int end) throws Exception {
+        ArrayList<Question> arrayList = null;
+        for (int i = begin; i <= end; i++) {
             arrayList.add(getIndex(i));
         }
         return arrayList;
     }
 
     // Đọc file ảnh từ thư mục asset trong project
-    public Drawable getDrawable(AssetManager asset, String filename){
+    public Drawable getDrawable(AssetManager asset, String filename) {
         try {
             // get input stream
             setIs(asset.open(filename));
             // load image as Drawable
             return Drawable.createFromStream(getIs(), null);
-        }
-        catch(IOException ex) {
+        } catch (IOException ex) {
             return null;
         }
     }

@@ -25,64 +25,74 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-            // Ẩn Actionbar
-            getSupportActionBar().hide();
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        // Ẩn Actionbar
+        getSupportActionBar().hide();
 
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "questions")
+                .allowMainThreadQueries()
+                .build();
+        questionDao = db.questionDao();
 
-            AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "questions")
-                    .allowMainThreadQueries()
-                    .build();
-            questionDao = db.questionDao();
-        }
+//        Load data
+//        try {
+//            Log.i("zzzzzzz", (new myResource(getResources(), R.raw.resource)).getIndex(100).toString());
+//            Question q = questionDao.findQuestionById(101);
+//            q.setUserRsult(new ArrayList<Integer>());
+//            Log.i("zzzzzzz", q.toString());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//        setRoomDatabaseData();
+    }
 
-        public void setRoomDatabaseData() {
-            myResource m = new myResource(getResources(), R.raw.resource);
+    public void setRoomDatabaseData() {
+        myResource m = new myResource(getResources(), R.raw.resource);
 
-            try {
+        try {
 //            questionDao.clearQuestionsTable();
-                int num = m.ArrayJSON().length();
+            int num = m.ArrayJSON().length();
 
-                for (int i = 0; i < num; i++) {
-                    Question q = m.getIndex(i);
-                    questionDao.insert(q);
-                }
-
-            } catch (Exception e) {
-                ((TextView) findViewById(R.id.activity_Title)).setText(e.getMessage());
-                e.printStackTrace();
+            for (int i = 0; i < num; i++) {
+                Question q = m.getIndex(i);
+                questionDao.insert(q);
             }
 
+        } catch (Exception e) {
+            ((TextView) findViewById(R.id.activity_Title)).setText(e.getMessage());
+            e.printStackTrace();
         }
 
-        // Chứa dựng sự kiện click cho các thành phần trong layout
-        public void onClick (View v){
-            Intent intent = null;
-                switch (v.getId()) {
-                    case R.id.layout_Learning:
-                        // Click layout, button Học
-                        intent = new Intent(this, LearningActivity.class);
-                        intent = new Intent(this, LearningActivity.class);
-                        break;
-                        case R.id.layout_Contest:
-                            // Click layout, button Thi
-                            intent = new Intent(this, ContestWelcome.class);
-                            break;
-                        case R.id.layout_TrafficSign:
-                            // Click layout, button biển báo
-                            intent = new Intent(this, TrafficSignActivity.class);
-                            break;
-                        default:
-                            Toast.makeText(this, "Chức năng chưa được phát triển", Toast.LENGTH_SHORT).show();
-                            break;
-                    }
-                    try {
-                        try {
-                            startActivity(intent);
-                        } catch (Exception e) {
-                        }
-                    } catch (Exception e) {
-                    }
-                }
+    }
+
+    // Chứa dựng sự kiện click cho các thành phần trong layout
+    public void onClick(View v) {
+        Intent intent = null;
+        switch (v.getId()) {
+            case R.id.layout_Learning:
+                // Click layout, button Học
+                intent = new Intent(this, LearningActivity.class);
+                break;
+            case R.id.layout_Contest:
+                // Click layout, button Thi
+                intent = new Intent(this, ContestWelcome.class);
+                break;
+            case R.id.layout_TrafficSign:
+                // Click layout, button biển báo
+                intent = new Intent(this, TrafficSignActivity.class);
+                break;
+            default:
+                Toast.makeText(this, "Chức năng chưa được phát triển", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        try {
+            try {
+                startActivity(intent);
+            } catch (Exception e) {
             }
+        } catch (Exception e) {
+        }
+    }
+}

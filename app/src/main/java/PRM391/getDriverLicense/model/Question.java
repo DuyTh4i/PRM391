@@ -29,7 +29,7 @@ public class Question {
     @Ignore
     private ArrayList<Integer> userRsult;
 
-    public Question(){
+    public Question() {
 
     }
 

@@ -23,6 +23,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
+
 import PRM391.getDriverLicense.R;
 import PRM391.getDriverLicense.adapter.Custom_ListView_Answer;
 import PRM391.getDriverLicense.model.AppDatabase;
@@ -30,10 +31,11 @@ import PRM391.getDriverLicense.model.Custom_Row_Answer;
 import PRM391.getDriverLicense.model.Question;
 import PRM391.getDriverLicense.model.QuestionDao;
 import PRM391.getDriverLicense.model.myResource;
+
 import java.util.ArrayList;
 import java.util.Random;
 
-public class ContestDetail extends AppCompatActivity implements View.OnClickListener{
+public class ContestDetail extends AppCompatActivity implements View.OnClickListener {
     private DrawerLayout mDrawerLayout;
     private ListView listView_Nav, listView_Answer;
     private ActionBarDrawerToggle mToggle;
@@ -69,7 +71,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
             // Ẩn đáp án
             setShowRusult(false);
             setTime();
-        }catch (Exception e){
+        } catch (Exception e) {
             Log.i("zzzzzzz", e.getMessage());
             e.printStackTrace();
         }
@@ -204,7 +206,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
         int plus = Integer.parseInt(view.getTag().toString());
         currPosition = (currPosition + plus + 20) % 20;
         try {
-            createListViewAnswer(currPosition );
+            createListViewAnswer(currPosition);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -294,7 +296,7 @@ public class ContestDetail extends AppCompatActivity implements View.OnClickList
                     Button btn = (Button) view.findViewById(R.id.lear_cus_btn);
                     // Thay doi dau tich vao button
                     if (row.isBit())
-                        btn.setBackground(myResource.getDrawable(getAssets(),"checked.png"));
+                        btn.setBackground(myResource.getDrawable(getAssets(), "checked.png"));
                     else
                         btn.setBackgroundResource(R.color.white);
                     // Cap nhat lai ket qua nguoi dung lua chon

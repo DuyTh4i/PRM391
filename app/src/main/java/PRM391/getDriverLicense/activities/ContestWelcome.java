@@ -2,7 +2,9 @@ package PRM391.getDriverLicense.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.appcompat.app.ActionBar;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -25,14 +27,14 @@ public class ContestWelcome extends AppCompatActivity {
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ContestWelcome.this,ContestDetail.class);
+                Intent intent = new Intent(ContestWelcome.this, ContestDetail.class);
                 startActivity(intent);
             }
         });
     }
 
     // Tùy chỉnh ActionBar
-    private void customActibar(){
+    private void customActibar() {
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.setDisplayShowHomeEnabled(false);
         mActionBar.setDisplayShowTitleEnabled(false);
@@ -47,9 +49,9 @@ public class ContestWelcome extends AppCompatActivity {
         imgbHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ContestWelcome.this,MainActivity.class);
+                Intent intent = new Intent(ContestWelcome.this, MainActivity.class);
                 startActivity(intent);
-                ContestWelcome.this.overridePendingTransition( R.anim.righttoleft, R.anim.stable );
+                ContestWelcome.this.overridePendingTransition(R.anim.righttoleft, R.anim.stable);
             }
         });
 

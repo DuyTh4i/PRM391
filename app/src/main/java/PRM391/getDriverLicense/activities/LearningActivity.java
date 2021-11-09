@@ -1,7 +1,10 @@
 package PRM391.getDriverLicense.activities;
+
 import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.appcompat.app.ActionBar;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageButton;
@@ -21,7 +24,7 @@ public class LearningActivity extends AppCompatActivity implements View.OnClickL
     }
 
     // Tùy chỉnh ActionBar
-    private void customActibar(){
+    private void customActibar() {
         ActionBar mActionBar = getSupportActionBar();
         mActionBar.setDisplayShowHomeEnabled(false);
         mActionBar.setDisplayShowTitleEnabled(false);
@@ -35,9 +38,9 @@ public class LearningActivity extends AppCompatActivity implements View.OnClickL
         imgbHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LearningActivity.this,MainActivity.class);
+                Intent intent = new Intent(LearningActivity.this, MainActivity.class);
                 startActivity(intent);
-                LearningActivity.this.overridePendingTransition( R.anim.righttoleft, R.anim.stable );
+                LearningActivity.this.overridePendingTransition(R.anim.righttoleft, R.anim.stable);
             }
         });
 
@@ -47,34 +50,35 @@ public class LearningActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View v) {
-        Intent intent=null;
-        switch (v.getId()){
+        Intent intent = null;
+        switch (v.getId()) {
             case R.id.layout_learning_0:
-                intent = new Intent(this,LearningDetail.class);
-                intent.putExtra("begin","0");
-                intent.putExtra("end","74");
+                intent = new Intent(this, LearningDetail.class);
+                intent.putExtra("begin", "0");
+                intent.putExtra("end", "74");
                 break;
             case R.id.layout_learning_1:
-                intent = new Intent(this,LearningDetail.class);
-                intent.putExtra("begin","75");
-                intent.putExtra("end","79");
+                intent = new Intent(this, LearningDetail.class);
+                intent.putExtra("begin", "75");
+                intent.putExtra("end", "79");
                 break;
             case R.id.layout_learning_2:
-                intent = new Intent(this,LearningDetail.class);
-                intent.putExtra("begin","80");
-                intent.putExtra("end","115");
+                intent = new Intent(this, LearningDetail.class);
+                intent.putExtra("begin", "80");
+                intent.putExtra("end", "115");
                 break;
             case R.id.layout_learning_3:
-                intent = new Intent(this,LearningDetail.class);
-                intent.putExtra("begin","116");
-                intent.putExtra("end","149");
+                intent = new Intent(this, LearningDetail.class);
+                intent.putExtra("begin", "116");
+                intent.putExtra("end", "149");
                 break;
             default:
                 Toast.makeText(this, "Chức năng chưa được sử dụng", Toast.LENGTH_SHORT).show();
                 break;
         }
-        try{
+        try {
             startActivity(intent);
-        }catch (Exception e){}
+        } catch (Exception e) {
+        }
     }
 }
