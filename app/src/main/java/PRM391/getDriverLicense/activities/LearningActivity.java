@@ -26,8 +26,6 @@ public class LearningActivity extends AppCompatActivity implements View.OnClickL
     // Tùy chỉnh ActionBar
     private void customActibar() {
         ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setDisplayShowHomeEnabled(false);
-        mActionBar.setDisplayShowTitleEnabled(false);
         LayoutInflater mInflater = LayoutInflater.from(this);
 
         View mCustomView = mInflater.inflate(R.layout.custom_actionbar, null);

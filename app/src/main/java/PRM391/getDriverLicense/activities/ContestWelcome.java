@@ -36,16 +36,12 @@ public class ContestWelcome extends AppCompatActivity {
     // Tùy chỉnh ActionBar
     private void customActibar() {
         ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setDisplayShowHomeEnabled(false);
-        mActionBar.setDisplayShowTitleEnabled(false);
         LayoutInflater mInflater = LayoutInflater.from(this);
 
         View mCustomView = mInflater.inflate(R.layout.custom_actionbar, null);
         TextView mTitleTextView = (TextView) mCustomView.findViewById(R.id.title_text);
         mTitleTextView.setText("Quá trình thi");
         ImageButton imgbHome = (ImageButton) mCustomView.findViewById(R.id.actionbar_btnHome);
-        ImageButton imgSearch = (ImageButton) mCustomView.findViewById(R.id.actionbar_btnSearch);
-        imgSearch.setVisibility(View.INVISIBLE); // Ẩn nút tìm kiếm
         imgbHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
